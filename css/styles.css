@@ -1,3 +1,32 @@
+:root{
+  --font:  "Livvic", "Arial", sans-serif;
+  --bg-color:#014E56;
+  --coral:#F67E7E;
+  --light:#fff;
+  --state-green:#012F34;
+  --dark-green:#002529;
+
+}
+
+/* livvic-600 - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+       url("../fonts/livvic-v11-latin-600.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url("../fonts/livvic-v11-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* livvic-700 - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+       url("../fonts/livvic-v11-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url("../fonts/livvic-v11-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,11 +46,12 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: var(--font);
   font-size: 16px;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  line-height: 25px;
+  font-weight: 600;
+  background-color: var(--bg-color);
+  color: var(--light);
 }
 
 img {
@@ -33,9 +63,9 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1440px;
+  padding-left: 165px;
+  padding-right: 165px;
   margin-left: auto;
   margin-right: auto;
 }
