@@ -14,8 +14,8 @@
   font-style: normal;
   font-weight: 600;
   src: local(""),
-       url("../fonts/livvic-v11-latin-600.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../fonts/livvic-v11-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/livvic-v11-latin-600.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("../fonts/livvic-v11-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* livvic-700 - latin */
 @font-face {
@@ -23,8 +23,8 @@
   font-style: normal;
   font-weight: 700;
   src: local(""),
-       url("../fonts/livvic-v11-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../fonts/livvic-v11-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/livvic-v11-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("../fonts/livvic-v11-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* GLOBAL */
@@ -59,6 +59,37 @@ img {
   height: auto;
 }
 
+.btn{
+  padding: 10px 32px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:active{
+  opacity: 0.7;
+}
+
+.btn-light{
+  border: 2px solid var(--light);
+  color: var(--light);
+}
+
+.btn-light:hover{
+  background-color:var(--light);
+  color:var(--bg-color);
+}
+
+.btn-dark{
+  border: 2px solid var(--state-green);
+  color: var(--state-green);
+}
+.btn-dark:hover{
+  background-color:var(--state-green);
+  color:var(--light);
+}
 
 /* CONTAINER */
 .container {
@@ -75,3 +106,62 @@ img {
 .main-content {
   flex-grow: 1;
 }
+
+.header{
+  padding-top: 75px;
+  padding-bottom: 250px;
+}
+
+/* NAVBAR  */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo:hover{
+  cursor: pointer;
+  opacity:0.8;
+}
+
+.logo:active{
+  opacity:0.6;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.links:not(:last-child){
+  margin-right: 40px;
+  margin-left: 80px;
+
+}
+.links{
+  text-transform: lowercase;
+  font-size: 18px;
+  line-height: 28px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.links:hover{
+  opacity: 0.8;
+}
+
+.links:active{
+  opacity: 0.6;
+}
+
+
+/* Hero part  */
