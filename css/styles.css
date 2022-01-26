@@ -106,9 +106,9 @@ img {
 
 
 /* MAIN-CONTENT */
-.main-content {
+/* .main-content {
   flex-grow: 1;
-}
+} */
 
 .header{
   padding-top: 75px;
@@ -284,9 +284,6 @@ img {
   position: relative;
 }
 
-.index-about-wrapper {
-
-}
 .index-about-title {
   font-weight: bold;
   font-size: 48px;
@@ -392,4 +389,73 @@ img {
   left: 0;
   transform: translateY(25%);
 
+}
+
+
+/* Footer bar style  */
+.footer-bar {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--dark-green);
+  padding: 48px 0;
+  z-index: 1;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-data {
+  display: flex;
+  align-items: center;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.logo {
+  z-index: 1;
+}
+.foot-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.f-links {
+  margin-right: 40px;
+  cursor: pointer;
+}
+.f-links:hover{
+  opacity: 0.7;
+}
+.footer-details {
+  margin-left: 125px;
+  opacity: 0.6;
+  font-weight: 600;
+font-size: 15px;
+line-height: 25px;
+}
+.social-media {
+  text-align: end;
+}
+
+/* Yemagan joyi  */
+
+.svg-social {
+  margin-left: 15px;
+  cursor: pointer;
+}
+.svg-social:hover{
+  fill: var(--coral);
+}
+.copyright {
+  opacity: 0.6;
+  margin-top: 51px;
 }
