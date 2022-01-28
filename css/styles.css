@@ -572,12 +572,14 @@ a{
   margin-bottom: 76px ;
 
 
+
 }
 .d-cards-front , .d-card-back {
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
+  padding: 48px;
   background-color: var(--dark-green);
   text-align: center;
   padding-top: 32px;
