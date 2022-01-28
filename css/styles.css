@@ -57,6 +57,7 @@ body {
 }
 ul{
   list-style: none;
+  padding: 0;
 }
 img {
   max-width: 100%;
@@ -118,7 +119,7 @@ a{
 
 .header{
   padding-top: 75px;
-  padding-bottom: 250px;
+  padding-bottom: 130px;
   position: relative;
   max-width: 1440px;
   width: 100%;
@@ -493,7 +494,6 @@ a{
   width: 100%;
   margin: 0 auto;
   position: relative;
-  margin-top: -120px;
   padding-bottom: 120px;
 }
 
@@ -595,7 +595,7 @@ a{
 }
 
 .directors-wrapper:hover .d-cards-front{
-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .directors-wrapper:hover .d-card-back{
   transform: rotateY(360deg);
@@ -648,15 +648,15 @@ transform: rotateY(180deg);
   margin: 0 auto;
   padding: 140px 0 ;
   position: relative;
-   background-color: var(--state-green);
+  background-color: var(--state-green);
 }
 
 .clients-title {
   font-style: normal;
-font-weight: bold;
-font-size: 48px;
-line-height: 48px;
-text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
 }
 .clients-wrapper {
   display: flex;
@@ -667,4 +667,86 @@ text-align: center;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+
+/* CONTACT PAGE  */
+.contact-text{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.contact {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;}
+
+.contact-title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100px;
+  margin: 0;
+
+}
+
+.contact .hightlighted{
+  font-weight: bold;
+font-size: 32px;
+line-height: 48px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.in {
+  width: 500px;
+  background-color:rgba(0, 0, 0, 0);
+  outline: none;
+  border:none;
+  padding: 16px 10px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+.in::placeholder , .message::placeholder{
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+
+}
+.message {
+  max-width: 500px;
+  min-height: 140px;
+  padding: 18px 10px;
+  resize: none;
+  background-color: rgba(0, 0, 0, 0);
+  border:none;
+  outline: none;
+  color: #fff;
+}
+
+.contact-dec-l {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+}
+.contact-dec-r {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
 }
