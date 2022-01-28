@@ -527,7 +527,7 @@ a{
 
 /* directors */
 .directors {
-  background-color:var(--state-green);
+  background-color:#004047;
   padding-bottom: 168px;
   padding-top: 140px;
   max-width: 1440px;
@@ -600,13 +600,6 @@ transform: rotateY(180deg);
 .directors-wrapper:hover .d-card-back{
   transform: rotateY(360deg);
 }
-/*
-.directors-wrapper:hover .more-less{
-
-  transform:rotate(45deg);
-
-  background-color: #79C8C7;
-} */
 
 .person-img {
   width: 96px;
@@ -646,4 +639,32 @@ transform: rotateY(180deg);
 .more-less:hover{
   background-color: #79C8C7;
 
+}
+
+/* CLIENTS  */
+.clients {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 140px 0 ;
+  position: relative;
+   background-color: var(--state-green);
+}
+
+.clients-title {
+  font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 48px;
+text-align: center;
+}
+.clients-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clients-dec {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
