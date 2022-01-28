@@ -532,6 +532,21 @@ a{
   padding-top: 140px;
   max-width: 1440px;
   width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.directors-dec-l {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+}
+.directors-dec-r {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
 }
 
 .directors-title {
@@ -541,20 +556,56 @@ a{
   text-align: center;
   margin-bottom: 64px;
 }
-.directors-wrapper {
+
+.directors-main-wrapper{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.directors-wrapper {
+  width: 320px;
+  height: 253px;
+  position: relative;
+  perspective: 1000px;
+  margin-bottom: 76px ;
+
 
 }
-.d-cards-front {
-  width: 350px;
-  height: 253px;
+.d-cards-front , .d-card-back {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   background-color: var(--dark-green);
   text-align: center;
   padding-top: 32px;
-  position: relative;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1s;
+
+
 }
+
+.d-card-back{
+  transform: rotateY(180deg);
+}
+
+.directors-wrapper:hover .d-cards-front{
+transform: rotateY(180deg);
+}
+.directors-wrapper:hover .d-card-back{
+  transform: rotateY(360deg);
+}
+/*
+.directors-wrapper:hover .more-less{
+
+  transform:rotate(45deg);
+
+  background-color: #79C8C7;
+} */
+
 .person-img {
   width: 96px;
   height: 96px;
@@ -575,15 +626,22 @@ a{
   line-height: 25px;
 }
 .more-less {
-width: 56px;
-height: 56px;
-background-color: var(--coral);
-position: absolute;
-bottom: 0;
-border-radius:50%;
-left: 147px;
-transform: translateY(50%);
-display: flex;
-align-items: center;
-justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: var(--coral);
+  position: absolute;
+  bottom: 0;
+  border-radius:50%;
+  left: 137px;
+  transform: translateY(50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.more-less:hover{
+  background-color: #79C8C7;
+
 }
